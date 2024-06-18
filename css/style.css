@@ -7,6 +7,14 @@ html {
   font-size: 62.5%;
 }
 
+body {
+}
+
+.black-bg {
+  background: black;
+  color: white;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -23,6 +31,23 @@ header nav ul {
 header nav ul li a {
   display: block;
   margin-left: 1rem;
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 20%;
+  height: 0.2rem;
+  bottom: 1rem;
+  background: red;
+  transition: all 300ms ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 60%;
 }
 
 a {
