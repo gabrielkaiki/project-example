@@ -7,6 +7,15 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.main-content {
+  margin: 3rem 0;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
